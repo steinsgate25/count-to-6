@@ -1,13 +1,13 @@
 class Saludo {
   constructor(name) {
     this.name = name
-    this.namelowercase = name.toLowerCase()
   }
 
   saludo() {
     return `Hello, ${this.name}!
-Your name lowercased is "${this.namelowercase}".`
+Your name lowercased is "${this.name.toLowerCase()}".`
   }
+
 }
 
 var greeting = new Saludo(process.argv[2])
